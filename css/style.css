@@ -11,6 +11,7 @@
 header{
     
    background: var(--main-color);
+  
 }
 nav{
      display: flex;
@@ -30,6 +31,7 @@ nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    
 }
 nav ul li{
     list-style: none;
@@ -54,6 +56,118 @@ nav ul li a:hover{
     color: black;
     
   }
+ 
+/*
+  .slider-box{
+    width: 90%;
+    height: 90vh;
+    margin: 30px auto;
+    position: absolute;
+  }
+  #slider{
+    width: 100%;
+    display: inline-flex;
+  }
+
+  #slider img{
+    width: 100%;
+
+  }
+  /*.slider-wrap{
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .slide-swiper img{
+   width: 100%;
+   height: 45%; 
+  } */
+
+  * {box-sizing: border-box;}
+  body {font-family: Verdana, sans-serif;}
+
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slide-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+  }
+
+
+  /* Caption text */
+  h1  {
+    color: black;
+    font-size: 25px;
+    padding: 72vh 20px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .text {
+    color: black;
+    padding: 60vh 20px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+
+  .cards{
+    display: flex;
+  overflow: hidden;
+  }
+  .card{
+    width: 86vw;
+    margin: auto;
+  }
+  .carditem{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 20px;
+  }
+  
+ /* .container{
+  min-height: calc(100% - 12vh -12vh);
+  }*/
 
 footer{
     height: 12vh;
