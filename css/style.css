@@ -9,8 +9,6 @@
     margin: 0;
    box-sizing: border-box;
   }
-    body {font-family: Verdana, sans-serif;}
-  
 
 header{
     
@@ -28,10 +26,11 @@ nav{
 }
 .logo img{
     width: 85px;
+ 
 }
 nav ul{
     height: 12vh;
-    margin: 0 47%;
+    margin: 0 27%;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -39,7 +38,7 @@ nav ul{
 }
 nav ul li{
     list-style: none;
-    padding: 0 23px;
+    padding: 0 6px;
 }
 nav ul li a{
     color: white;
@@ -55,32 +54,31 @@ nav ul li a{
     transition: all 0.8s ease;
    }
 
-nav ul li a:hover{
+   nav ul li a:hover{
     background: #fff;
-    color: black;
-    
+    color:black;
   }
- 
+
   .slide-container {
     max-width: 100%;
     position: relative;
     margin: auto;
-    background-size: cover;
+    background-size: cover; 
   }
   
-  .mySlides {
-    display: none;
-  }
   .mySlides img {
-    vertical-align: middle;
-    height: 650px;
-    width: 100%;
+       vertical-align: middle; 
+       height: 650px; 
+       width: 100%;
     
-  }
+  } 
+
+
+
   h1  {
     color: black;
     font-size: 25px;
-    padding: 58vh 20px;
+    padding: 68vh 20px;
     position: absolute;
     bottom: 8px;
     width: 100%;
@@ -89,7 +87,7 @@ nav ul li a:hover{
   
   .text {
     color: black;
-    padding: 48vh 20px;
+    padding: 63vh 20px;
     position: absolute;
     bottom: 8px;
     width: 100%;
@@ -110,41 +108,71 @@ nav ul li a:hover{
     background-color: #717171;
   }
   
-
+ 
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
   }
+    
+ 
   
-  @keyframes fade {
-    from {opacity: .4} 
-    to {opacity: 1}
-  }
-  
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .text {font-size: 11px}
-  }
-
-
-  .cards{
-    display: flex;
-  overflow: hidden;
-  }
-  .card{
-    width: 86vw;
-    margin: auto;
-  }
-  .carditem{
+  .card {
     display: inline-flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin: 0 20px;
+    flex-wrap: wrap;
+    margin: 12px 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+
+  
+  }
+
+  h2 {
+    color: black;
+    font-size: 30px;
+    position:relative;
+    padding-top: 7vh;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+ 
+  p{
+    color: black;
+    font-size: 18px;
+    padding: 20px 18px;
+    position:relative;
+    width: 100%;
+    text-align: center;
   }
   
- /* .container{
-  min-height: calc(100% - 12vh -12vh);
-  }*/
+.column {
+  float: left;
+  width: 23%;
+  padding: 0 10px;
+  margin:  0 15px; 
+}
+.row {
+  margin: 0 38px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card img{
+    position:relative;
+    height: auto;
+    width: 100%;
+  }
 
 footer{
     height: 12vh;
@@ -152,4 +180,35 @@ footer{
     font-family: 'Lato', sans-serif;
    
     
+}
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px} 
+}
+
+
+
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
 }
